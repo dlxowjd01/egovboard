@@ -75,7 +75,7 @@ public class EgovSampleServiceImpl extends EgovAbstractServiceImpl implements Eg
 		LOGGER.debug(vo.toString());
 
 		/** ID Generation Service */
-		String id = egovIdGnrService.getNextStringId();
+		String id = "";
 		vo.setId(id);
 		LOGGER.debug(vo.toString());
 

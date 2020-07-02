@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="egovframework.example.sample.service.impl.SampleMapper">
 
-	<resultMap id="sample" type="egovframework.example.sample.service.SampleVO">
-		<result property="id" column="id"/>
-		<result property="name" column="name"/>
-		<result property="description" column="description"/>
-		<result property="useYn" column="use_yn"/>
-		<result property="regUser" column="reg_user"/>
-	</resultMap>
+<!-- 	<resultMap id="sample" type="egovframework.example.sample.service.SampleVO"> -->
+<!-- 		<result property="id" column="id"/> -->
+<!-- 		<result property="name" column="name"/> -->
+<!-- 		<result property="description" column="description"/> -->
+<!-- 		<result property="useYn" column="use_yn"/> -->
+<!-- 		<result property="regUser" column="reg_user"/> -->
+<!-- 	</resultMap> -->
 
 	<insert id="insertSample" parameterType="SampleVO">
 
@@ -44,14 +44,14 @@
 
 	</delete>
 
-	<select id="selectSample" resultMap="sample">
+<!-- 	<select id="selectSample" resultMap="sample"> -->
 
-			SELECT
-				ID, NAME, DESCRIPTION, USE_YN, REG_USER
-			FROM SAMPLE
-			WHERE ID=#{id}
+<!-- 			SELECT -->
+<!-- 				ID, NAME, DESCRIPTION, USE_YN, REG_USER -->
+<!-- 			FROM SAMPLE -->
+<!-- 			WHERE ID=#{id} -->
 
-	</select>
+<!-- 	</select> -->
 
 	<select id="selectSampleList" parameterType="searchVO" resultType="egovMap">
 
